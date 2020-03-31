@@ -11,8 +11,27 @@
     th {background-color:darkgray}
     #top {color: blue}
     .name {color: burlywood}
-
     
+    input[type=text]{background-color: red}
+    input[type=number]{background-color: yellow}
+    input[type=password]{background-color: aqua}
+    button {
+        width: 200px;
+        height:25px; 
+        background-color: green
+    }
+
+    button:hover{
+        background-color: red
+    } 
+    
+    a:before{
+        content: "\21d2"
+    }
+    p::selection{
+        color: red;
+        background-color: green
+    }
     
 </style>   
 </head>    
@@ -51,8 +70,9 @@
     </table>
     <form>
     <input type="text" placeholder="Enter Your Name" name="name">
-    <input type"password" name="password" placeholder="password">   
+    <input type="password" name="password" placeholder="password">   
     <input name="contary" list="countray" placeholder="countary">
+    <input name="age" type="number" placeholder="Enter Your Age">    
     <datalist id="countray">
     <option value="iraq"></option>    
         
@@ -60,6 +80,7 @@
     <button>submit your info</button>
         
     </form>
+    <p>this is the section test with css this is the section test with css dthis is the section test withthis is the section test with css</p>
     <a href="http://www.google.com">google</a>
     
 </body>
